@@ -12,13 +12,21 @@ class Falcon {
 
     }
     update(){
-        console.log('update');
+        //console.log('update');
+        if(keys[38]){
+            if(this.moving=== false){
+                this.y -=grid;
+                this.moving  = true;
+            }
+        }   //up key/arrow
     }
     draw(){
         ctx3.fillStyle = 'gray';
         ctx3.fillRect(this.x, this.y,this.width, this.height);
     }
-
+jump(){
+    //console.log('jump')
+}
 
 }
 
