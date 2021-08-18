@@ -5,7 +5,7 @@ class Falcon {
         this.width = this.spriteWidth/5;
         this.height = this.spriteHeight/5;
         this.x = canvas.width/2  - this.width/2;
-        this.y = canvas.height - this.height;
+        this.y = canvas.height - this.height - 40;
         this.moving  = false;
         this.frameX = 0;
         this.frameY = 0;
@@ -13,12 +13,45 @@ class Falcon {
     }
     update(){
         //console.log('update');
-        if(keys[38]){
+        if(keys[38]){ //up key/arrow
             if(this.moving=== false){
                 this.y -=grid;
                 this.moving  = true;
             }
-        }   //up key/arrow
+        }  
+        if(keys[40]){ //down key
+            if(this.moving=== false){
+                if(this.y <canvas.height - this.height *2 && this.moving === false){
+                    this.y += grid;
+                    this.moving = true;
+                } ;
+                //this.moving  = true;
+     
+            } 
+        }
+        if(keys[37]){ //left
+            if(this.moving === false && this.x > this.width){
+                if(this.y <canvas.height - this.height *2 && this.moving === false){
+                    this.x -= grid;
+                    this.moving = true;
+                } ;
+            }
+
+
+
+        }
+
+if(keys[39]){ //right
+            if(this.moving === false && this.x < canvas.width - this.width * 2){
+                
+                    this.x += grid;
+                    this.moving = true;
+                
+            }
+        }
+        if(this.y < 0 )scored();
+
+
     }
     draw(){
         ctx3.fillStyle = 'gray';
