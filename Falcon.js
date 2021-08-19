@@ -1,3 +1,4 @@
+//contains code for player character 
 class Falcon {
     constructor(){
         this.spriteWidth = 250;

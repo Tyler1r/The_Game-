@@ -1,5 +1,5 @@
 // using 5 Id's to organize the game 
-// 
+// // this will contain global variables and information for the sprites being used.Everything needed around the ap
 
 
 const canvas = document.getElementById('canvas1');

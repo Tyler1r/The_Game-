@@ -1,3 +1,5 @@
+// this will handle the obstacles in the ships way while crossing the path
+
 class Obstacle {
     constructor(x,y, width , height, speed , type){
         this.x = x;

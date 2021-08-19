@@ -30,3 +30,9 @@ function scored(){
     falcon.x = canvas.width/2 - falcon.width/2;
     falcon.y = canvas.height - falcon.height - 40;
 }
+
+
+function createScore(){
+    ctx4.fillText(score, 270,65);
+    ctx4.font = '15px Verdanda';
+}
