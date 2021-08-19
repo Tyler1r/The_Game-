@@ -20,7 +20,7 @@ class Falcon {
             }
         }  
         if(keys[40]){ //down key
-            if(this.moving=== false){
+            if(this.moving === false){
                 if(this.y <canvas.height - this.height *2 && this.moving === false){
                     this.y += grid;
                     this.moving = true;

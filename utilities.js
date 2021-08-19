@@ -1,3 +1,5 @@
+// this will handle all the loops & event listeners 
+
 function animate(){
     ctx3.clearRect(0,0, canvas.width, canvas.height );
     falcon.draw();
