@@ -34,7 +34,7 @@ function createObjects(){
 //lane 2 
 for(let i = 0 ; i < 2 ; i++){
     let x = i * 350;
-    carsArray.push(new Obstacle(x,canvas.height - grid * 3, grid * 2,grid,2))
+    carsArray.push(new Obstacle(x,canvas.height - grid * 3, grid * 2,grid,0.7))
 
 } 
 
@@ -50,10 +50,10 @@ for(let i = 0 ; i < 2 ; i++){
 //lane 4 
 for(let i = 0 ; i < 2 ; i++){
     let x = i * 350;
-    carsArray.push(new Obstacle(x,canvas.height - grid * 5, grid * 2,grid,0.5))
+    carsArray.push(new Obstacle(x,canvas.height - grid * 5, grid * 2,grid,2))
 }
 
-//lane 4 
+//lane 5
 for(let i = 0 ; i < 2 ; i++){
     let x = i * 350;
     carsArray.push(new Obstacle(x,canvas.height - grid * 6, grid * 2,grid,1))

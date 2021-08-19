@@ -5,6 +5,7 @@ function animate(){
     falcon.draw();
     falcon.update();
     cycleObjects();
+    createScore();
     requestAnimationFrame(animate);
 }
 
@@ -33,6 +34,8 @@ function scored(){
 
 
 function createScore(){
-    ctx4.fillText(score, 270,65);
-    ctx4.font = '15px Verdanda';
+    ctx4.fillStyle = 'white';
+    ctx4.strokeStyle = 'white';
+    ctx4.fillText(score, 270, 65);
+    ctx4.font = '45px Verdanda';
 }
