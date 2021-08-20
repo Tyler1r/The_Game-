@@ -35,14 +35,12 @@ canvas.height = 600;
 
 // global variables 
 const grid = 80;
-let keys =[];
-let score = 0 ;
-let collisionsCount = 0;
-let fraome = 0;
-let gameSpeed = 1;
+let keys =[]; // array to push keys into to allow object to move 
+let score = 0 ; // start score off at 0 
+let gameSpeed = 1; // game speed should start at 1 and gradually increase (havent got it to work jesus christ)
 
-const particlesArray = [];
-const maxParticles = 300;
+
+
 const carsArray = [];
 //will contain tye fighters etc!
 const logsArray = [];

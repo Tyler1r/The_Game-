@@ -11,8 +11,8 @@ class Obstacle {
     }
 
     draw(){
-        ctx1.fillStyle = 'red';
-        ctx1.fillRect(this.x,this.y, this.width, this.height);
+        ctx1.fillStyle = 'red'; // gives the moving rectangles the color red 
+        ctx1.fillRect(this.x,this.y, this.width, this.height); // arguments that is giving the moving rectangles their shape 
     }
     update(){
         this.x += this.speed * gameSpeed;
@@ -24,9 +24,15 @@ class Obstacle {
 
 function createObjects(){
     // this is for the first lane of cars 
-    for(let i = 0 ; i < 2 ; i++){
-        let x = i * 350;
-        carsArray.push(new Obstacle(x,canvas.height - grid * 2, grid * 2,grid,1))
+    for(let i = 0 ; i < 2 ; i++){ // created a for loop for the objects that are going across the scren 
+        let x = i * 350; // this variable is used to create spacing between the two cars in the lane 
+        carsArray.push(new Obstacle(x,canvas.height - grid * 2, grid * 2,grid,1)) // we are pushing the obtstacle into the cars.array 
+        // these are the arguments in the obstacle that give the obstacles their properties (its 4:30am help me )
+        // x = 350 
+        // canvas height =  600 - grid which is 80 * 2 = 160 = 440 
+        // width = grid which is 80 *2 = 160 
+        // speed = 1, you can change speed by increasing or decreasing  
+        // 
     }
 
 }
@@ -64,9 +70,9 @@ for(let i = 0 ; i < 2 ; i++){
     createObjects()
 
     function cycleObjects(){
-        for(let i = 0 ; i < carsArray.length ; i++){
-            carsArray[i].update();
-            carsArray[i].draw();
+        for(let i = 0 ; i < carsArray.length ; i++){ // created a for loop to loop through the carArray 
+            carsArray[i].update(); // i is the standard variable looping through the array and drawing on the update function as normal (its 5:30 am help me )
+            carsArray[i].draw(); // i is the standard variable and we are lopping through the array for the draw function 
         }
     }
         
